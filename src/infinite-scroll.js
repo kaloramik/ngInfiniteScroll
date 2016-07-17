@@ -64,7 +64,7 @@ angular.module(MODULE_NAME, [])
         let containerBottom;
         let elementBottom;
         if (container === windowElement) {
-          containerBottom = height(container) + pageYOffset(container[0].document.documentElement);
+          containerBottom = window.innerHeight + pageYOffset(container[0].document.documentElement);
           elementBottom = offsetTop(elem) + height(elem);
         } else {
           containerBottom = height(container);
